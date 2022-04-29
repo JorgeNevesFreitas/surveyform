@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Survey</title>
+  </head>
+  
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Bike Usage Survey Form</h1>
+        <p id=description>
+          Help us improve our city knowing your bike usage
+        </p>
+      </header>
+    
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email</label>
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label">Age (optional)</label>
+          <input
+            type="number"
+            name="Age"
+            id="number"
+            placeholder="Age"
+            min="0"
+            max="99"
+          />
+        </div>
+        <div class="form-group" id="radio">
+          <p>
+           Do you have bicycle?
+          </p>
+          <label>
+           <input
+            name="radio-button"
+            type="radio"
+            value="yes"
+            checked
+            >Yes
+            </label>
+            <label>          
+            <input
+            name="radio-button"
+            type="radio"
+            value="no"
+            >No
+            </label>
+            <label>
+            <input
+            name="radio-button"
+            type="radio"
+            value="buy"
+            >No, but I plan to by one
+          </label>
+          <label>            
+              <input
+              name="radio-button"
+              type="radio"
+              value="rent-a-bike"
+              >No, I use a rent-a-bike service
+            </label>
+        </div>
+        <div class="form-group" id="wherego">
+          <p>
+            Where do you go on bicycle?
+          </p>
+          <select name="dropdown" id="dropdown" required>
+            <option disabled selected value>Select one option</option> <!--para surgir esta opç
+            ao no inicio. não é selecionavel. obriga a escolher uma das outras opções-->
+            <option value="work">to work</option>
+            <option value="school">to school</option>
+            <option value="shopping">on shopping</option>
+            <option value="recreation">recreation</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+           How often do you ride on bike?
+          </p>
+          <label>
+            <input
+            name="radio-button"
+            type="radio"
+            value="day"
+            >Every day
+          </label>
+         
+          <label>
+            <input
+            name="radio-button"
+            type="radio"
+            value="week"
+            >Several times a week
+          </label>
+         
+          <label>
+            <input
+            name="radio-button"
+            type="radio"
+            value="month"
+            >Several times a month
+          </label>
+          
+          <label>
+            <input
+            name="radio-button"
+            type="radio"
+            value="year"
+            >Several times a year
+          </label>
+          <label>
+            <input
+            name="radio-button"
+            type="radio"
+            value="year"
+            >I don't ride a bike
+          </label>
+       
+            <div class="form-group">
+              <p>
+               Main barriers to use a bike?
+              </p>
+              <label>
+                <input
+                name="checkbox"
+                type="checkbox"
+                value="bike-line"
+                >No bike lines
+              </label>
+              <label>
+                <input
+                name="checkbox"
+                type="checkbox"
+                value="parking-space"
+                >No parking space
+              </label>
+              <label>
+                <input
+                name="checkbox"
+                type="checkbox"
+                value="traffic"
+                >Heavy traffic
+              </label>
+              <label>       
+                <input
+                name="checkbox"
+                type="checkbox"
+                value="theft"
+                >Risk of theft
+              </label>
+              <label>
+                  <input
+                  name="checkbox"
+                  type="checkbox"
+                  value="other"
+                  >Other
+              </label>
+            <div class="form-group">
+              <p>
+                <label>Any comments or suggestions?</label>
+              </p>
+              <textarea name="message" id="comments" cols="30" rows="10"></textarea>
+            <div class="form-group">
+              <button type="submit" value="send" id="submit">Send         
+              </button>
+            </div>
+
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+    font-family: poppins, sans-serif;
+    background: #D3DEC9;
+    color: black;
+  
+    
+}
+
+.header {
+    text-align: center;
+    line-height: 10px;
+}
+
+form {
+    background-color: #1A3C58;
+    color: white;
+    width: 50%;
+    padding-left: 2.5rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 3.5rem;
+    margin: 2rem auto;
+    font-size: 14px;
+   
+        
+}
+
+
+#survey-form label {
+    display:block;
+    padding: 0.5rem;
+   
+}
+
+form input[type="text"], #survey-form textarea { /*parte dentro de [] diz que esta formatação é apenas para type=text*/
+   
+    padding: 8px;
+    width: 100% ;
+       }
+
+form input[type="email"], #survey-form textarea { /*parte dentro de [] diz que esta formatação é apenas para type=text*/
+
+padding: 8px;
+width: 100% ;
+}
+
+form input[type="number"], #survey-form textarea { /*parte dentro de [] diz que esta formatação é apenas para type=text*/
+
+    padding: 8px;
+    width: 100% ;
+    }
+
+div {
+    line-height: 0.5rem;
+    margin-top: 3.5rem;
+}
+
+div p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+select {
+    padding: 8px;
+    width: 100% ;
+}
+
+button {
+    background-color: #49795D;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    justify-self: center;
+    border: 0;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+    
+    
+
